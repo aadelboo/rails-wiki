@@ -1,1 +1,11 @@
-<h1>test</h1>
+<div class="container">
+ <div class="group">
+    <h1 class="article-title"><%= @article.title %></h1>
+      <div class="icon">
+        <%= link_to " 🗑 ", article_path(@article), method: :delete, data: { confirm: "are you sure?"} %>
+        <%= link_to " 📝 ", edit_article_path(@article) %>
+      </div>
+    <p class="article-content"><%= @article.content %></p>
+ </div>
+ <%= link_to "back to list", articles_path %>
+</div>

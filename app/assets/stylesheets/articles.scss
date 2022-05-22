@@ -1,3 +1,41 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.banner {
+  display: flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.banner-title {
+  text-decoration: none;
+  color: #9198e5;
+}
+
+.banner-link-new-article{
+  text-decoration: none;
+  color: #9198e5;
+}
+
+.article-title{
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #9198e5;
+  padding: 8px 0px;
+}
+
+.article-content{
+  padding: 8px 0px;
+  font-size: 16px;
+}
+
+.articles-ul{
+  list-style: none;
+}
+
+.icon{
+  padding: 4px;
+}

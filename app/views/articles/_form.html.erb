@@ -1,0 +1,6 @@
+ <%= simple_form_for @article do |article| %>
+  <%= article.input :title %>
+  <%= article.input :content %>
+  <%= article.submit %>
+ <% end %>
+ <%= link_to "back to list", articles_path %>
