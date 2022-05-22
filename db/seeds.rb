@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
+
+new_article.destroy_all
+
+10.times do
+  new_article = Article.new(title: Faker::DcComics.title, content: Faker::Restaurant.review)
+  new_article.save
+end
